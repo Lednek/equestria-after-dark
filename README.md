@@ -12,6 +12,16 @@ python -m http.server 4173 --directory dist --bind 127.0.0.1
 
 Visit http://127.0.0.1:4173. You can also open `dist/index.html` directly.
 
+## GitHub Pages
+
+The workflow in `.github/workflows/pages.yml` publishes `dist/` directly. No build or package installation is required. Relative asset paths support a GitHub Pages project URL.
+
+1. Publish this repository to GitHub using GitHub Desktop.
+2. In the repository's **Settings → Pages**, choose **GitHub Actions** as the source.
+3. Push a change to `dist/` on `main`, or run **Deploy to GitHub Pages** from the **Actions** tab.
+
+After deployment, GitHub lists the live address under **Settings → Pages**. Future website commits pushed from GitHub Desktop deploy automatically.
+
 ## Files
 
 - `dist/index.html`: page content, metadata, FAQ, collaboration dialog.
