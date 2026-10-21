@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1120" viewBox="0 0 960 1120" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="480" y1="0" x2="480" y2="1120" gradientUnits="userSpaceOnUse"><stop stop-color="#171821"/><stop offset=".45" stop-color="#2e2c42"/><stop offset=".8" stop-color="#454051"/><stop offset="1" stop-color="#17171f"/></linearGradient>
+    <radialGradient id="moon-glow"><stop stop-color="#ac91c6" stop-opacity=".26"/><stop offset="1" stop-color="#ac91c6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="moon" cx=".35" cy=".25" r=".8"><stop stop-color="#dfd9e6"/><stop offset=".55" stop-color="#c7bad5"/><stop offset="1" stop-color="#9b8bab"/></radialGradient>
+    <linearGradient id="mist"><stop stop-color="#a69aba" stop-opacity="0"/><stop offset=".5" stop-color="#a69aba" stop-opacity=".12"/><stop offset="1" stop-color="#a69aba" stop-opacity="0"/></linearGradient>
+    <linearGradient id="river" x1="500" y1="730" x2="500" y2="1120" gradientUnits="userSpaceOnUse"><stop stop-color="#9b8aaf" stop-opacity=".35"/><stop offset="1" stop-color="#696078" stop-opacity="0"/></linearGradient>
+    <linearGradient id="castle" x1="700" y1="360" x2="700" y2="760" gradientUnits="userSpaceOnUse"><stop stop-color="#252532"/><stop offset="1" stop-color="#12141e"/></linearGradient>
+    <pattern id="stars" width="277" height="263" patternUnits="userSpaceOnUse"><circle cx="30" cy="62" r=".8" fill="#d9cee5" opacity=".5"/><circle cx="144" cy="19" r=".7" fill="#d9cee5" opacity=".3"/><circle cx="230" cy="145" r="1" fill="#d9cee5" opacity=".4"/><circle cx="88" cy="221" r=".5" fill="#d9cee5" opacity=".6"/></pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+    <symbol id="pine" viewBox="0 0 50 180"><path d="M24 0 12 40h8L6 73h11L1 110h15L0 143h21v37h6v-37h23l-18-33h16L33 73h11L30 40h8L24 0Z" fill="currentColor"/></symbol>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h960v1120H0z"/><path fill="url(#stars)" d="M0 0h960v760H0z"/>
+  <ellipse cx="632" cy="277" rx="325" ry="325" fill="url(#moon-glow)"/>
+  <circle cx="633" cy="267" r="125" fill="url(#moon)"/>
+  <g opacity=".07" fill="#51425e"><ellipse cx="598" cy="216" rx="40" ry="21" transform="rotate(-34 598 216)"/><ellipse cx="679" cy="302" rx="37" ry="25"/><circle cx="607" cy="284" r="20"/><circle cx="650" cy="187" r="14"/><ellipse cx="588" cy="332" rx="27" ry="17"/></g>
+  <path d="M384 291c125-15 186 20 303 10 90-9 185-4 273 6v25c-104-9-186-13-291-1-123 15-199-25-295-13l10-27Z" fill="#494253" opacity=".25" filter="url(#soft)"/>
+  <path d="M0 590 81 539l41 17 75-70 52 37 57-31 66 49 75-80 57 17 57-80 37 45 42-22 66 75 43-29 74 28 83-63 54 28v540H0V590Z" fill="#393648"/>
+  <path d="m0 667 67-35 79 15 61-74 52 21 74-74 54 37 45-18 74 78 71-56 45 6 61-63 56 55 58-13 87 46 76-18 42 23v523H0V667Z" fill="#292b3a"/>
+  <path d="m0 740 89-32 61 13 45-48 70 18 46-31 56 40 54-23 69 63 59-16 62 40 68-23 80 29 65-64 52 22 64-35 70 32 31-6v401H0V740Z" fill="#202330"/>
+  <path d="M0 736c146-43 211 12 338 30 172 23 323-39 622 25v42C690 764 508 850 313 812 193 789 109 772 0 799v-63Z" fill="url(#mist)" filter="url(#soft)"/>
+  <path d="m524 757 46 24-39 35 57 40-35 30 78 41 109 193H377l105-171 38-45-23-36 48-36-34-31 13-44Z" fill="url(#river)"/>
+  <!-- The distant citadel: hand-drawn architectural silhouettes. -->
+  <path d="m491 728 31-39 33 7 21-48 34 11 18-28 19 4 29-31 35 15 32-10 28 51 27-3 19 54 34 24 15 69-59 50-113-17-48-28-95-12-53-25 32-44Z" fill="#141722"/>
+  <g fill="url(#castle)">
+    <path d="M559 678V538h29v140h-29Z"/><path d="m552 540 22-49 22 49h-44Z"/>
+    <path d="M611 663V472h34v191h-34Z"/><path d="m603 475 25-69 26 69h-51Z"/>
+    <path d="M670 672V426h37v246h-37Z"/><path d="m660 431 29-90 28 90h-57Z"/>
+    <path d="M723 684V490h31v194h-31Z"/><path d="m715 494 24-62 23 62h-47Z"/>
+    <path d="M770 701V560h28v141h-28Z"/><path d="m763 564 21-48 21 48h-42Z"/>
+    <path d="M580 683V580h52v103h-52ZM639 691V544h55v147h-55ZM703 705V590h78v115h-78Z"/>
+    <path d="M550 721V662h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v9h12v-9h10v68H550Z"/>
+  </g>
+  <g stroke="#777084" stroke-opacity=".36" stroke-width="1"><path d="m574 491-13 43v98m67-226-17 64v111m78-240-18 83v142m68-134-15 57v113m60-84-13 45v88M561 542h26m26-65h30m29-44h34m19 63h28"/></g>
+  <path d="M689 342v-18m0 4c15-9 19 10 36 0v15c-16 11-21-8-36 0" stroke="#9e86b1" stroke-opacity=".6" stroke-width="1.4"/>
+  <g fill="#cbb3dc" opacity=".65"><path d="M681 464a4 4 0 0 1 8 0v15h-8v-15ZM681 503a4 4 0 0 1 8 0v15h-8v-15ZM622 505a3 3 0 0 1 6 0v12h-6v-12ZM622 543a3 3 0 0 1 6 0v12h-6v-12ZM733 524a3 3 0 0 1 6 0v12h-6v-12ZM569 568a3 3 0 0 1 6 0v10h-6v-10ZM780 589a3 3 0 0 1 6 0v11h-6v-11Z"/></g>
+  <path d="M658 722v-25a12 12 0 0 1 24 0v25h-24Z" fill="#7f6a92" opacity=".5"/>
+  <g fill="#8c7c9e" opacity=".4"><path d="M591 612h4v8h-4zM607 612h4v8h-4zM649 575h4v8h-4zM668 575h4v8h-4zM716 620h4v8h-4zM744 620h4v8h-4zM764 637h4v8h-4zM579 687h3v7h-3zM603 687h3v7h-3zM628 687h3v7h-3zM700 687h3v7h-3zM725 687h3v7h-3zM749 687h3v7h-3zM774 687h3v7h-3z"/></g>
+  <path d="M0 843c153-33 255 8 344 51l37 38-87 188H0V843Zm960-60-91 15-66 67-96 42-64 46 61 167h256V783Z" fill="#151923"/>
+  <g color="#151923"><use href="#pine" x="20" y="651" width="50" height="180"/><use href="#pine" x="80" y="701" width="40" height="140"/><use href="#pine" x="122" y="734" width="40" height="140"/><use href="#pine" x="873" y="630" width="63" height="226"/><use href="#pine" x="833" y="716" width="40" height="144"/></g>
+  <path d="M0 985c171-27 268 21 377 89l-25 46H0V985Zm960-48c-135 6-189 40-226 92l-39 91h265V937Z" fill="#10131c"/>
+  <g color="#10131b"><use href="#pine" x="11" y="757" width="90" height="324"/><use href="#pine" x="106" y="836" width="64" height="230"/><use href="#pine" x="170" y="899" width="57" height="205"/><use href="#pine" x="889" y="730" width="92" height="331"/><use href="#pine" x="831" y="847" width="62" height="223"/></g>
+  <path d="M0 911c101-5 176 24 253 60 102 47 158 62 271 28 139-43 239-55 436-13v31c-178-41-291-29-421 14-117 39-200 13-288-24C170 973 94 947 0 949v-38Z" fill="url(#mist)" opacity=".5" filter="url(#soft)"/>
+  <path d="m816 124 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6ZM488 147l1.5 4.5 4.5 1.5-4.5 1.5-1.5 4.5-1.5-4.5-4.5-1.5 4.5-1.5 1.5-4.5Z" fill="#c8b5d9" opacity=".8"/>
+</svg>
