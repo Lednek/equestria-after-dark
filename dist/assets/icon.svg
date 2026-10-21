@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="ground" x1="68" y1="32" x2="456" y2="496" gradientUnits="userSpaceOnUse"><stop stop-color="#302339"/><stop offset="1" stop-color="#101016"/></linearGradient>
+    <linearGradient id="moon" x1="152" y1="130" x2="360" y2="379" gradientUnits="userSpaceOnUse"><stop stop-color="#f2e7fa"/><stop offset="1" stop-color="#b38bc9"/></linearGradient>
+    <linearGradient id="edge" x1="90" y1="50" x2="420" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#b58cc8"/><stop offset="1" stop-color="#675273"/></linearGradient>
+    <mask id="crescent"><rect width="512" height="512" fill="white"/><circle cx="293" cy="215" r="106" fill="black"/></mask>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#ground)"/>
+  <rect x="12" y="12" width="488" height="488" rx="94" stroke="#ba91cd" stroke-opacity=".22" stroke-width="2"/>
+  <path d="m256 60 146 85v158L256 454 110 303V145L256 60Z" stroke="url(#edge)" stroke-width="7"/>
+  <path d="m256 80 127 74v141L256 427 129 295V154l127-74Z" stroke="#c9a6dd" stroke-opacity=".15" stroke-width="2"/>
+  <circle cx="255" cy="252" r="113" fill="url(#moon)" mask="url(#crescent)"/>
+  <path d="m311 153 13 40 40 13-40 13-13 40-13-40-40-13 40-13 13-40Z" fill="#edddf5"/>
+  <path d="m359 259 6 19 19 6-19 6-6 19-6-19-19-6 19-6 6-19Z" fill="#c9a2dc"/>
+</svg>

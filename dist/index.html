@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,27 @@
   <meta property="og:title" content="Equestria After Dark">
   <meta property="og:description" content="A familiar world. A darker chapter. Explore the vision and development of an adult open-world fan project.">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Equestria After Dark">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://lednek.github.io/equestria-after-dark/">
+  <meta property="og:image" content="https://lednek.github.io/equestria-after-dark/assets/social-preview-v1.jpg">
+  <meta property="og:image:secure_url" content="https://lednek.github.io/equestria-after-dark/assets/social-preview-v1.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Equestria After Dark — A familiar world. A darker chapter. Characters in a lantern-lit village beneath a violet moon.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Equestria After Dark">
+  <meta name="twitter:description" content="A familiar world. A darker chapter. An independent adult open-world MLP project.">
+  <meta name="twitter:image" content="https://lednek.github.io/equestria-after-dark/assets/social-preview-v1.jpg">
+  <meta name="twitter:image:alt" content="Equestria After Dark title over a moonlit fantasy village with reimagined characters.">
   <title>Equestria After Dark — A darker chapter</title>
-  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://lednek.github.io/equestria-after-dark/">
+  <link rel="icon" href="favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64 128x128 256x256">
+  <link rel="icon" href="assets/icon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -18,13 +37,14 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#" aria-label="Equestria After Dark home">
-        <img src="assets/mark.svg" width="38" height="44" alt="">
+        <img src="assets/icon.svg" width="40" height="40" alt="">
         <span>EQUESTRIA<span class="brand-sub">AFTER DARK</span></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation"><span></span><span></span></button>
       <nav id="navigation" aria-label="Main navigation">
         <a href="#world">The world</a>
         <a href="#gameplay">Gameplay</a>
+        <a href="#gallery">Gallery</a>
         <a href="#development">Development</a>
         <a class="nav-cta" href="#involved">Get involved <span aria-hidden="true">↗</span></a>
       </nav>
@@ -33,7 +53,7 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-art" src="assets/nightfall.svg" alt="An illustrated castle above a mountain valley under a pale violet moon" fetchpriority="high" width="960" height="1120">
+      <img class="hero-art" src="assets/gallery/moonlit-village.webp" srcset="assets/gallery/moonlit-village-840.webp 840w, assets/gallery/moonlit-village.webp 1916w" sizes="100vw" alt="Reimagined characters in a lantern-lit village, with a castle beneath a violet moon" fetchpriority="high" width="1916" height="821">
       <div class="hero-shade"></div>
       <div class="container hero-content">
         <div class="hero-copy">
@@ -46,7 +66,7 @@
             <a class="text-link" href="#development">View project status <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <p class="art-caption"><span class="caption-line"></span> A familiar world. A darker chapter.<span class="art-label">Atmospheric illustration · Not gameplay</span></p>
+        <p class="art-caption"><span class="caption-line"></span> A familiar world. A darker chapter.<span class="art-label">Project imagery · Visual direction</span></p>
       </div>
       <div class="hero-meta container">
         <span><span class="age-badge">18+</span> For mature audiences</span>
@@ -76,11 +96,11 @@
               <div class="panel-copy"><span class="eyebrow">An open world with a darker pulse</span><h3>Beauty at the edge of corruption.</h3><p>From enchanted wilderness to the seats of old power, the vision is a connected world that rewards curiosity. Explore freely, find your own routes, and uncover what became of the Equestria you remember.</p></div>
             </div>
             <div class="world-panel" role="tabpanel" id="panel-leaders" aria-labelledby="tab-leaders" tabindex="0" hidden>
-              <div class="panel-art seven-art" aria-hidden="true"><span class="panel-stamp">CHARACTER VISION / 002</span><div class="seven-sigils"><span>☾</span><span>✧</span><span>♜</span><span>✦</span><span>♜</span><span>✧</span><span>☾</span></div><span class="panel-art-label">Seven figures. Shifting allegiances.</span></div>
+              <div class="panel-art seven-art"><img src="assets/gallery/character-ensemble-840.webp" alt="All seven reimagined characters gathered together in a warmly lit tavern" width="840" height="280" loading="lazy"><span class="panel-stamp">CHARACTER VISION / 002</span><span class="panel-art-label">Seven figures. Shifting allegiances.</span></div>
               <div class="panel-copy"><span class="eyebrow">Familiar legends, reimagined</span><h3>Seven leaders. No easy loyalties.</h3><p>Seven major characters in human form sit at the heart of the project. Their planned faction roles, relationship paths, and personal ambitions will give you reasons to choose your allies carefully.</p></div>
             </div>
             <div class="world-panel" role="tabpanel" id="panel-choice" aria-labelledby="tab-choice" tabindex="0" hidden>
-              <div class="panel-art choice-art" aria-hidden="true"><span class="panel-stamp">PLAYER VISION / 003</span><div class="choice-symbol"><span></span><i>✧</i><span></span></div><span class="panel-art-label">Power takes many paths</span></div>
+              <div class="panel-art choice-art" aria-hidden="true"><span class="panel-stamp">PLAYER VISION / 003</span><span class="panel-art-label">Every connection begins somewhere</span></div>
               <div class="panel-copy"><span class="eyebrow">A place in the world, on your terms</span><h3>Make your own kind of mark.</h3><p>Navigate mature relationships, build your reputation, and explore the cost of forbidden power. The intended experience is a player-driven sandbox shaped by social choices, faction loyalties, and exploration.</p></div>
             </div>
           </div>
@@ -102,9 +122,37 @@
       </div>
     </section>
 
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow"><span class="section-number">03 /</span> A glimpse after dark</p><span class="section-aside">The world. Its people. Your perspective.</span></div>
+        <div class="split-heading"><h2 id="gallery-title">Step into<br><em>the atmosphere.</em></h2><p>Moonlit streets, familiar faces, and quiet corners. Explore the project's visual direction, one scene at a time.</p></div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-wide">
+            <a class="gallery-link" href="assets/gallery/town-exploration.webp" data-gallery data-title="Under a violet moon" data-description="Third-person exploration through a lantern-lit town square." aria-label="Enlarge Under a violet moon">
+              <img src="assets/gallery/town-exploration-840.webp" srcset="assets/gallery/town-exploration-840.webp 840w, assets/gallery/town-exploration.webp 1672w" sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 64px), 1200px" alt="A third-person view of a red-and-gold-haired character exploring a bustling town beneath a pink moon" width="1672" height="940" loading="lazy" decoding="async">
+              <span class="gallery-expand" aria-hidden="true">↗</span><span class="gallery-image-label">Exploration / 01</span>
+            </a><figcaption><h3>Under a violet moon</h3><span>The town after nightfall</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <a class="gallery-link" href="assets/gallery/tavern-interior.webp" data-gallery data-title="A place to return to" data-description="A warm tavern interior, lit by the fireplace and candlelight." aria-label="Enlarge A place to return to">
+              <img src="assets/gallery/tavern-interior-840.webp" alt="A third-person view inside a warmly furnished tavern room with characters, a fireplace, and candlelit tables" width="1672" height="941" loading="lazy" decoding="async">
+              <span class="gallery-expand" aria-hidden="true">↗</span><span class="gallery-image-label">Interiors / 02</span>
+            </a><figcaption><h3>A place to return to</h3><span>Warmth beyond the wilderness</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <a class="gallery-link" href="assets/gallery/tavern-conversation.webp" data-gallery data-title="Faces behind the stories" data-description="An over-the-shoulder conversation across a candlelit tavern table." aria-label="Enlarge Faces behind the stories">
+              <img src="assets/gallery/tavern-conversation-840.webp" alt="An over-the-shoulder view of a conversation with a pink-haired character at a candlelit tavern table" width="1672" height="941" loading="lazy" decoding="async">
+              <span class="gallery-expand" aria-hidden="true">↗</span><span class="gallery-image-label">Connections / 03</span>
+            </a><figcaption><h3>Faces behind the stories</h3><span>Every encounter is a beginning</span></figcaption>
+          </figure>
+        </div>
+        <p class="scope-note"><span aria-hidden="true">✧</span> Project imagery illustrates the intended atmosphere and visual direction. Final in-game presentation may change.</p>
+      </div>
+    </section>
+
     <section class="section development-section" id="development" aria-labelledby="development-title">
       <div class="container">
-        <div class="section-heading"><p class="eyebrow"><span class="section-number">03 /</span> Development journal</p><span class="status-label"><span class="status-dot"></span> Early development</span></div>
+        <div class="section-heading"><p class="eyebrow"><span class="section-number">04 /</span> Development journal</p><span class="status-label"><span class="status-dot"></span> Early development</span></div>
         <div class="development-grid">
           <div class="development-intro"><h2 id="development-title">A real foundation.<br><em>A long road ahead.</em></h2><p>The project starts with seven completed human-form character models and a set of working systems from previous titles. Bringing them together into this world is the next chapter.</p><div class="release-note"><span class="eyebrow">Release information</span><strong>No release date announced.</strong><p>A public build has not been announced. Progress and scope will be shared as development advances.</p></div></div>
           <div class="roadmap">
@@ -117,7 +165,7 @@
     </section>
 
     <section class="involved-section" id="involved" aria-labelledby="involved-title">
-      <div class="container involved-inner"><div><p class="eyebrow"><span class="section-number">04 /</span> Help shape the next chapter</p><h2 id="involved-title">A darker world.<br><em>A shared ambition.</em></h2><p>Looking for artists, developers, and creative collaborators who want to help build a playable world. Bring your craft, your perspective, and a serious interest in the project.</p><div class="roles"><span>3D & character art</span><span>Unreal development</span><span>World & narrative design</span></div><button class="button button-primary" id="open-collaboration" type="button">Let's build something <span aria-hidden="true">↗</span></button><p class="collaboration-note">Prepare a short introduction to share with the creator.</p></div><div class="involved-emblem" aria-hidden="true"><div class="emblem-circle"><img src="assets/mark.svg" width="130" height="154" alt=""></div><span>EQUESTRIA AWAITS</span></div></div>
+      <div class="container involved-inner"><div><p class="eyebrow"><span class="section-number">05 /</span> Help shape the next chapter</p><h2 id="involved-title">A darker world.<br><em>A shared ambition.</em></h2><p>Looking for artists, developers, and creative collaborators who want to help build a playable world. Bring your craft, your perspective, and a serious interest in the project.</p><div class="roles"><span>3D & character art</span><span>Unreal development</span><span>World & narrative design</span></div><button class="button button-primary" id="open-collaboration" type="button">Let's build something <span aria-hidden="true">↗</span></button><p class="collaboration-note">Prepare a short introduction to share with the creator.</p></div><div class="involved-emblem" aria-hidden="true"><div class="emblem-circle"><img src="assets/mark.svg" width="130" height="154" alt=""></div><span>EQUESTRIA AWAITS</span></div></div>
     </section>
 
     <section class="faq-section container" aria-labelledby="faq-title">
@@ -131,7 +179,13 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="#" aria-label="Back to top"><img src="assets/mark.svg" width="30" height="36" alt=""><span>EQUESTRIA<span class="brand-sub">AFTER DARK</span></span></a><p>A familiar world. A darker chapter.</p><a class="back-top" href="#">Back to top <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><p>© <span id="year">2026</span> Equestria After Dark · Working title</p><p>Independent fan project. Not affiliated with Hasbro.</p><span class="footer-age">18+ · Mature themes</span></div></div></footer>
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="#" aria-label="Back to top"><img src="assets/icon.svg" width="32" height="32" alt=""><span>EQUESTRIA<span class="brand-sub">AFTER DARK</span></span></a><p>A familiar world. A darker chapter.</p><a class="back-top" href="#">Back to top <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><p>© <span id="year">2026</span> Equestria After Dark · Working title</p><p>Independent fan project. Not affiliated with Hasbro.</p><span class="footer-age">18+ · Mature themes</span></div></div></footer>
+
+  <dialog id="gallery-dialog" class="gallery-dialog" aria-labelledby="gallery-dialog-title" aria-describedby="gallery-dialog-description">
+    <div class="gallery-dialog-header"><p class="eyebrow">Equestria After Dark · Project gallery</p><button class="gallery-close" type="button" aria-label="Close image gallery">×</button></div>
+    <img id="gallery-dialog-image" alt="" width="1672" height="941">
+    <div class="gallery-dialog-footer"><div><h2 id="gallery-dialog-title"></h2><p id="gallery-dialog-description"></p></div><div class="gallery-controls"><span id="gallery-count" aria-live="polite"></span><button type="button" id="gallery-previous" aria-label="Previous image">←</button><button type="button" id="gallery-next" aria-label="Next image">→</button></div></div>
+  </dialog>
 
   <dialog id="collaboration-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
     <button class="dialog-close" type="button" aria-label="Close collaboration form">×</button>

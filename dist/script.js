@@ -93,3 +93,41 @@ document.querySelector('#collaboration-form').addEventListener('submit', event =
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+// Links still open the original images when JavaScript is unavailable.
+const galleryLinks = [...document.querySelectorAll('[data-gallery]')];
+const galleryDialog = document.querySelector('#gallery-dialog');
+const galleryImage = document.querySelector('#gallery-dialog-image');
+let galleryIndex = 0;
+
+function showGalleryImage(index) {
+  galleryIndex = (index + galleryLinks.length) % galleryLinks.length;
+  const link = galleryLinks[galleryIndex];
+  galleryImage.src = link.href;
+  galleryImage.alt = link.querySelector('img').alt;
+  document.querySelector('#gallery-dialog-title').textContent = link.dataset.title;
+  document.querySelector('#gallery-dialog-description').textContent = link.dataset.description;
+  document.querySelector('#gallery-count').textContent = `${galleryIndex + 1} / ${galleryLinks.length}`;
+}
+
+galleryLinks.forEach((link, index) => {
+  link.addEventListener('click', event => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button !== 0) return;
+    event.preventDefault();
+    showGalleryImage(index);
+    galleryDialog.showModal();
+  });
+});
+document.querySelector('.gallery-close').addEventListener('click', () => galleryDialog.close());
+document.querySelector('#gallery-previous').addEventListener('click', () => showGalleryImage(galleryIndex - 1));
+document.querySelector('#gallery-next').addEventListener('click', () => showGalleryImage(galleryIndex + 1));
+galleryDialog.addEventListener('keydown', event => {
+  if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+  event.preventDefault();
+  showGalleryImage(galleryIndex + (event.key === 'ArrowRight' ? 1 : -1));
+});
+galleryDialog.addEventListener('click', event => {
+  if (event.target !== galleryDialog) return;
+  const bounds = galleryDialog.getBoundingClientRect();
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) galleryDialog.close();
+});
